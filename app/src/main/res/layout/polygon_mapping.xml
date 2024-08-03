@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="FragmentTagUsage" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="left"
+        android:padding="10dp"
+        tools:ignore="RtlHardcoded">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/idBtnHybridMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#aab1bd"
+                android:text="@string/Hybrid"
+                tools:ignore="ButtonStyle,VisualLintButtonSize,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/idBtnSatelliteMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#aab1bd"
+                android:text="@string/Satellite"
+                tools:ignore="ButtonStyle,VisualLintButtonSize,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/idBtnTerrainMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#aab1bd"
+                android:text="@string/Terrain"
+                tools:ignore="ButtonStyle,VisualLintButtonSize,TextContrastCheck" />
+
+
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/add1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:backgroundTint="#5086de"-->
+<!--            android:contentDescription="@string/TODO1"-->
+<!--            android:text="@string/Explore"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            tools:ignore="DuplicateSpeakableTextCheck,RtlHardcoded" />-->
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="300dp"
+            android:backgroundTint="#aab1bd"
+            android:contentDescription="@string/TODO2"
+            android:text="@string/Record"
+            tools:ignore="ObsoleteLayoutParam,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/draw"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#aab1bd"
+            android:contentDescription="@string/TODO2"
+            android:text="@string/Draw"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#aab1bd"
+            android:contentDescription="@string/TODO2"
+            android:text="@string/Delete"
+            tools:ignore="ObsoleteLayoutParam,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/end"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#aab1bd"
+            android:contentDescription="@string/TODO2"
+            android:text="@string/End"
+            tools:ignore="ObsoleteLayoutParam,TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

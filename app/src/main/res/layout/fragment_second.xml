@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif-monospace"
+        android:text="Survey"
+        android:textColor="#689F38"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:layout_marginTop="30dp"
+        android:minHeight="48dp"
+        android:backgroundTint="#CE93D8" />
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your phone number"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColor="#0a0a0a"
+        android:backgroundTint="#BA68C8" />
+
+    <EditText
+        android:id="@+id/describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Describe the garbage"
+        android:minHeight="48dp"
+        android:textColor="#0a0a0a"
+        android:backgroundTint="#BA68C8" />
+    <EditText
+        android:id="@+id/County"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your county"
+        android:minHeight="48dp"
+        android:textColor="#0a0a0a"
+        android:backgroundTint="#BA68C8" />
+    <EditText
+        android:id="@+id/constituency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your constituency"
+        android:minHeight="48dp"
+        android:textColor="#0a0a0a"
+        android:backgroundTint="#BA68C8" />
+
+    <EditText
+        android:id="@+id/ward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your ward"
+        android:minHeight="48dp"
+        android:textColor="#0a0a0a"
+        android:backgroundTint="#BA68C8" />
+
+    <!-- Location Input -->
+    <Button
+        android:id="@+id/editLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit your location"
+        android:layout_marginTop="30dp"
+        android:textColor="#0a0a0a"
+        android:backgroundTint="#AB47BC" />
+
+<!--    <Button-->
+<!--        android:id="@+id/txtPolygon"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Draw a polygon"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textColor="#f2f5f3"-->
+<!--        android:backgroundTint="#AB47BC" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/bSubmit"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:text="SUBMIT"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:background="#6A1B9A" />-->
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#0a0a0a"
+        android:fontFamily="serif-monospace"
+        android:text="@string/explanation"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="#BA68C8" />
+
+</LinearLayout>

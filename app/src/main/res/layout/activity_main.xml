@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="FragmentTagUsage" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/idBtnHybridMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Hybrid"
+                android:backgroundTint="#aab1bd"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/idBtnSatelliteMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Satellite"
+                android:backgroundTint="#aab1bd"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/idBtnTerrainMap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/Terrain"
+                android:backgroundTint="#aab1bd"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:backgroundTint="#5086de"
+            android:contentDescription="@string/TODO1"
+            android:text="@string/Explore"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            tools:ignore="DuplicateSpeakableTextCheck,RtlHardcoded" />
+
+<!--        <Button-->
+<!--            android:id="@+id/add5"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:layout_marginTop="370dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:backgroundTint="#aab1bd"-->
+<!--            android:text="@string/Current"-->
+<!--            android:contentDescription="@string/TODO2"-->
+<!--            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="460dp"
+            android:backgroundTint="#aab1bd"
+            android:contentDescription="@string/TODO2"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
